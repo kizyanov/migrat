@@ -1,0 +1,10 @@
+services:
+  sqlxmigrator:
+    image: ghcr.io/kizyanov/sqlxmigrator/sqlxmigrator:latest
+    pull_policy: always
+    network_mode: host
+    container_name: sqlxmigrator
+    volumes:
+      - ./migrations:/migrations
+    env_file:
+      - .env
