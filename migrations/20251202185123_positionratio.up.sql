@@ -6,5 +6,6 @@ CREATE TABLE IF NOT EXISTS positionratio (
     margin_coefficient_total_asset VARCHAR NOT NULL,
     total_debt VARCHAR NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    
     UNIQUE (exchange)
 );
