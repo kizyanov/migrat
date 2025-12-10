@@ -6,5 +6,6 @@ CREATE TABLE IF NOT EXISTS positionasset (
     asset_available VARCHAR NOT NULL,
     asset_hold VARCHAR NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    UNIQUE (exchange, asset_symbol)  
+
+    UNIQUE (exchange, asset_symbol)
 );

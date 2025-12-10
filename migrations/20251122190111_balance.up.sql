@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS balance (
     available VARCHAR NOT NULL,
     available_change VARCHAR NOT NULL,
     currency VARCHAR NOT NULL,
-    hold VARCHAR NOT NULL,
+    hold_value VARCHAR NOT NULL,
     hold_change VARCHAR NOT NULL,
     relation_event VARCHAR NOT NULL,
     relation_event_id VARCHAR NOT NULL,
@@ -16,4 +16,3 @@ CREATE TABLE IF NOT EXISTS balance (
     trade_id VARCHAR,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
-
