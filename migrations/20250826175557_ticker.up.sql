@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS ticker (
     id SERIAL PRIMARY KEY,
+    exchange VARCHAR(50) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     symbol VARCHAR(50) NOT NULL,
     symbol_name VARCHAR(50) NOT NULL,

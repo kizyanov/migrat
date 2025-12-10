@@ -1,1 +1,0 @@
-ALTER TABLE currency ALTER COLUMN exchange DROP DEFAULT;

@@ -1,1 +1,0 @@
-ALTER TABLE ticker ALTER COLUMN exchange DROP DEFAULT;

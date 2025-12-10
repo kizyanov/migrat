@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS currency (
     id SERIAL PRIMARY KEY,
+    exchange VARCHAR(50) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     currency VARCHAR(50),
     name VARCHAR(50),
