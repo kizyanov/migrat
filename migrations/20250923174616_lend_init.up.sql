@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE IF NOT EXISTS Lend (
+CREATE TABLE IF NOT EXISTS lend (
     id SERIAL PRIMARY KEY,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     currency VARCHAR(50),

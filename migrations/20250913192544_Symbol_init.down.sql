@@ -1,2 +1,2 @@
 -- Add down migration script here
-DROP TABLE IF EXISTS Symbol;
+DROP TABLE IF EXISTS symbol;
