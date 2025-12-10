@@ -5,5 +5,5 @@ CREATE TABLE IF NOT EXISTS errors (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE INDEX idx_errors_exchange ON errors(exchange);
-CREATE INDEX idx_errors_created_at ON errors(exchange);
+CREATE INDEX idx_errors_exchange ON errors (exchange);
+CREATE INDEX idx_errors_created_at ON errors (exchange);

@@ -30,5 +30,5 @@ CREATE TABLE IF NOT EXISTS symbol (
     callauction_third_stage_start_time BIGINT,
     trading_start_time BIGINT,
 
-    CONSTRAINT uq_symbol_exchange_symbol UNIQUE (exchange, symbol)
+    UNIQUE (exchange, symbol)
 )

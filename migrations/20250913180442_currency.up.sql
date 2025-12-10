@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS currency (
     is_margin_enabled BOOLEAN,
     is_debit_enabled BOOLEAN,
 
-    CONSTRAINT uq_currency_exchange_currency UNIQUE (exchange, currency)
+    UNIQUE (exchange, currency)
 )
