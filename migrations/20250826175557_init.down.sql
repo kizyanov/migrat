@@ -1,2 +1,2 @@
 -- Add migration script here
-DROP TABLE IF EXISTS Ticker;
+DROP TABLE IF EXISTS ticker;

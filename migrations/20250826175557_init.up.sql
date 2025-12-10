@@ -1,5 +1,5 @@
 -- Add migration script here
-CREATE TABLE IF NOT EXISTS Ticker (
+CREATE TABLE IF NOT EXISTS ticker (
     id SERIAL PRIMARY KEY,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     symbol VARCHAR(50) NOT NULL,
