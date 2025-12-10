@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE events (
+CREATE TABLE IF NOT EXISTS events (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   msg TEXT NOT NULL,

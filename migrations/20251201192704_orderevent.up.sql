@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE orderevent (
+CREATE TABLE IF NOT EXISTS orderevent (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   status VARCHAR NOT NULL,

@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE balance (
+CREATE TABLE IF NOT EXISTS balance (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   account_id VARCHAR NOT NULL,

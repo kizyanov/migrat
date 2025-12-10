@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE msgevent (
+CREATE TABLE IF NOT EXISTS msgevent (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   idmsg VARCHAR,

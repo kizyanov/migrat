@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE Symbol (
+CREATE TABLE IF NOT EXISTS Symbol (
     id SERIAL PRIMARY KEY,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     symbol VARCHAR(50),

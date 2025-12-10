@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE orderactive (
+CREATE TABLE IF NOT EXISTS orderactive (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   order_id VARCHAR NOT NULL,

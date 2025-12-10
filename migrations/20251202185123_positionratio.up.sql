@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE positionratio (
+CREATE TABLE IF NOT EXISTS positionratio (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   debt_ratio DOUBLE PRECISION NOT NULL,

@@ -1,5 +1,5 @@
 -- Add up migration script here
-CREATE TABLE positiondebt (
+CREATE TABLE IF NOT EXISTS positiondebt (
   id SERIAL PRIMARY KEY,
   exchange VARCHAR NOT NULL,
   debt_symbol VARCHAR NOT NULL,
