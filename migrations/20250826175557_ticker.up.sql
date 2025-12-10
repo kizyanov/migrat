@@ -7,4 +7,6 @@ CREATE TABLE IF NOT EXISTS ticker (
     maker_fee_rate VARCHAR(50),
     taker_coefficient VARCHAR(50),
     maker_coefficient VARCHAR(50)
+
+    CONSTRAINT uq_ticker_exchange_symbol UNIQUE (exchange, symbol)
 );

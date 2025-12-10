@@ -1,1 +1,0 @@
-ALTER TABLE symbol ALTER COLUMN exchange DROP DEFAULT;

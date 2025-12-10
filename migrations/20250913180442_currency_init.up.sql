@@ -8,5 +8,7 @@ CREATE TABLE IF NOT EXISTS currency (
     confirms SMALLINT,
     contract_address VARCHAR(50),
     is_margin_enabled BOOLEAN,
-    is_debit_enabled BOOLEAN
+    is_debit_enabled BOOLEAN,
+
+    CONSTRAINT uq_currency_exchange_currency UNIQUE (exchange, currency)
 )

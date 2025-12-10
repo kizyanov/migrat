@@ -1,7 +1,6 @@
 CREATE TABLE IF NOT EXISTS symbol (
     id SERIAL PRIMARY KEY,
     exchange VARCHAR(50) NOT NULL,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     symbol VARCHAR(50),
     name VARCHAR(100),
     base_currency VARCHAR(50),
@@ -29,5 +28,7 @@ CREATE TABLE IF NOT EXISTS symbol (
     callauction_first_stage_start_time BIGINT,
     callauction_second_stage_start_time BIGINT,
     callauction_third_stage_start_time BIGINT,
-    trading_start_time BIGINT
+    trading_start_time BIGINT,
+
+    CONSTRAINT uq_symbol_exchange_symbol UNIQUE (exchange, symbol)
 )
