@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS msgevent (
     code VARCHAR,
     borrow_size VARCHAR,
     client_oid VARCHAR,
-    client_id VARCHAR,
+    order_id VARCHAR,
     loan_apply_id VARCHAR,
     limit_rate DOUBLE PRECISION,
     reset_rate DOUBLE PRECISION,
