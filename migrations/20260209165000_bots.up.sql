@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS bots (
     id SERIAL PRIMARY KEY,
     exchange VARCHAR,
-    entry_id VARCHAR NULL,
+    entry_client_oid VARCHAR NULL,
     exit_tp_order_id VARCHAR NULL,
     exit_tp_client_oid VARCHAR NULL,
     exit_sl_order_id VARCHAR NULL,    
