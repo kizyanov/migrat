@@ -1,0 +1,13 @@
+DROP INDEX IF EXISTS idx_orderevent_updated_at;
+DROP INDEX IF EXISTS idx_balance_updated_at;
+DROP INDEX IF EXISTS idx_events_updated_at;
+DROP INDEX IF EXISTS idx_errors_updated_at;
+DROP INDEX IF EXISTS idx_msgevent_updated_at;
+DROP INDEX IF EXISTS idx_msgsend_updated_at;
+DROP INDEX IF EXISTS idx_positionasset_updated_at;
+DROP INDEX IF EXISTS idx_positiondebt_updated_at;
+DROP INDEX IF EXISTS idx_positionratio_updated_at;
+DROP INDEX IF EXISTS idx_bots_updated_at;
+DROP INDEX IF EXISTS idx_ticker_updated_at;
+DROP INDEX IF EXISTS idx_currency_updated_at;
+DROP INDEX IF EXISTS idx_symbol_updated_at;
